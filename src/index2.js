@@ -65,7 +65,7 @@ const createWindow = () => {
   });
 
   //(preloadのkey"set-title"からtitle文字列取得,handleSetTitleにipcMainEvent構造体とtitleを送る)
-  mainWindow.loadFile(path.join(__dirname, "tab.html"));
+  mainWindow.loadFile(path.join(__dirname, "index.html"));
   //mainWindowにindex.html読み込み
   mainWindow.webContents.setWindowOpenHandler(); //Developerツールを開いてサイトを開く
 };

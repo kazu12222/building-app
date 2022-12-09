@@ -145,6 +145,7 @@ allshowbtn.addEventListener("click", async () => {
 btn3.addEventListener("click", async () => {
   console.log("更新ボタンが押されました");
   btn3.classList.add("pushbtn");
+  before_property_array = new_property_array;
   new_property_array = await window.versions.puppeteer();
   getdiv.innerHTML = "";
   console.log(new_property_array);
